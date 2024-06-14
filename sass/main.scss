@@ -1,0 +1,101 @@
+//colors
+$main_color: #5da1e5;
+$sub_colorL: #8f1b1bb9;
+$h2_color: #f8af42;
+$h3_color: #7a8eff;
+$p_color: #d4f132;
+$program_name: #55ff85;
+$btn_color: #c8882e;
+$btn_text_color: #21fffb;
+
+.learned {
+    display: none;
+}
+
+body{
+    background: #5de9bf;
+    text-align: center;
+}
+.lessons{
+    text-align: left;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #5da1e5;
+    border-radius: 50px;
+    padding: 22px 5px;
+    
+    p{
+        color: $p_color;
+    }
+    
+    h2{
+        color: $h2_color;
+    }
+    label{
+        color: $p_color;
+    }
+
+
+    .particular-lesson{
+        width: 90%;
+        background-color: $sub_colorL;
+        border-radius: 20px;
+        padding: 10px 10px;
+    }
+}
+
+.courseWork{
+    h3{
+        color: $h3_color;
+        text-decoration: underline;
+    }
+    h1{
+        color: $program_name;
+        text-align: center;
+
+    }
+}
+
+.counterProgram{
+    width: 40%;
+    background: #6a1788;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    h2{
+        width: 90%;
+        text-align: center;
+        font-size: 4em;
+        margin: 10px ;
+    }
+
+    .btns {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        button{
+            color: $btn_text_color;
+            background-color: $btn_color;
+            border: none;
+            font-size: 20px;
+            padding: 8px 15px;
+            border-radius: 10px;
+            margin: 2px 2px;
+            cursor: pointer;
+        }
+    }
+}
