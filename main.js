@@ -227,22 +227,22 @@ header(`${elementHeadId}${counter}`, `${elementDescId}${counter}`, `${elementHea
 //circumFerence = 2 * PI *  radius
 //console.log(circumFerence)
 
-const PI = 3.14159;
-let radius;
-let circumFerence;
+//const PI = 3.14159;
+//let radius;
+//let circumFerence;
+//
+//document.getElementById("mySubmit1").onclick = function(){
+//  radius = document.getElementById("myText1").value
+//  radius = Number(radius)
+//  
+//  circumFerence = 2 * PI *  radius
+//
+//  console.log(`your result = ${circumFerence}`)
+//  document.getElementById('radiusResult').textContent = `your result = ${circumFerence}`
+//}
+//
 
-document.getElementById("mySubmit1").onclick = function(){
-  radius = document.getElementById("myText1").value
-  radius = Number(radius)
-  
-  circumFerence = 2 * PI *  radius
-
-  console.log(`your result = ${circumFerence}`)
-  document.getElementById('radiusResult').textContent = `your result = ${circumFerence}`
-}
-
-
-//------------------ lesson 7 -------------------
+//------------------ lesson 8 -------------------
 setContent("counter program", "let's finally make something")
 
 header(`${elementHeadId}${counter}`, `${elementDescId}${counter}`, `${elementHeader} ${counter}: ${theme}`, `${elementDescription} ${description}`)
@@ -278,7 +278,7 @@ header(`${elementHeadId}${counter}`, `${elementDescId}${counter}`, `${elementHea
 //}
 //
 
-//------------------ lesson 7 -------------------
+//------------------ lesson 9 -------------------
 setContent("Math object", "let's learn about some useful instrument as Math obj. With it we can make our work more easy ")
 
 header(`${elementHeadId}${counter}`, `${elementDescId}${counter}`, `${elementHeader} ${counter}: ${theme}`, `${elementDescription} ${description}`)
