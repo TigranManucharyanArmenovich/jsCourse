@@ -10,6 +10,7 @@ elementHeader = `Lesson`
 elementDescId = "jsDescription"
 
 elementDescription = "let's see"
+document.getElementById("pageTitle").textContent = "Ds course from code BRO"
 
 
 function header(lessHeaderId, LessDescriptionId, lessHeader, lessDescription){
@@ -248,37 +249,37 @@ setContent("counter program", "let's finally make something")
 header(`${elementHeadId}${counter}`, `${elementDescId}${counter}`, `${elementHeader} ${counter}: ${theme}`, `${elementDescription} ${description}`)
 
 
-// set the buttons names and name of program
-document.getElementById("programName").textContent = "Counter Program";
+//// set the buttons names and name of program
+//document.getElementById("programName").textContent = "Counter Program";
+//
+//document.getElementById("btn3").textContent = "plus";
+//document.getElementById("btn2").textContent = "reset";
+//document.getElementById("btn1").textContent = "minus";
+//
+////add counter variable  
+//let counterBase = 0
+//
+//// add functions for each button
+//document.getElementById("counterNumber").textContent = counterBase
+//
+//document.getElementById("btn3").onclick = function(){
+//  counterBase += 1
+//  document.getElementById("counterNumber").textContent = counterBase
+//}
+//
+//document.getElementById("btn2").onclick = function(){
+//  counterBase = 0
+//  document.getElementById("counterNumber").textContent = counterBase
+//}
+//
+//document.getElementById("btn1").onclick = function(){
+//  counterBase -= 1
+//  document.getElementById("counterNumber").textContent = counterBase
+//  
+//}
+//
 
-document.getElementById("btn3").textContent = "plus";
-document.getElementById("btn2").textContent = "reset";
-document.getElementById("btn1").textContent = "minus";
-
-//add counter variable  
-let counterBase = 0
-
-// add functions for each button
-document.getElementById("counterNumber").textContent = counterBase
-
-document.getElementById("btn3").onclick = function(){
-  counterBase += 1
-  document.getElementById("counterNumber").textContent = counterBase
-}
-
-document.getElementById("btn2").onclick = function(){
-  counterBase = 0
-  document.getElementById("counterNumber").textContent = counterBase
-}
-
-document.getElementById("btn1").onclick = function(){
-  counterBase -= 1
-  document.getElementById("counterNumber").textContent = counterBase
-  
-}
-
-
-//------------------ lesson 9 -------------------
+//------------------ lesson 8 -------------------
 setContent("Math object", "let's learn about some useful instrument as Math obj. With it we can make our work more easy ")
 
 header(`${elementHeadId}${counter}`, `${elementDescId}${counter}`, `${elementHeader} ${counter}: ${theme}`, `${elementDescription} ${description}`)
@@ -344,7 +345,51 @@ header(`${elementHeadId}${counter}`, `${elementDescId}${counter}`, `${elementHea
 //let min = Math.min(x,y,z)
 //console.log(min)
 
-//------------------ lesson 7 -------------------
-setContent("Math object", "let's learn about some useful instrument as Math obj. With it we can make our work more easy ")
+//------------------ lesson 9 -------------------
+setContent("Random number generator", "let's learn about another useful instrument witch can make our work more easy ")
 
 header(`${elementHeadId}${counter}`, `${elementDescId}${counter}`, `${elementHeader} ${counter}: ${theme}`, `${elementDescription} ${description}`)
+
+////default value of random number generator is range between 0 and 1
+//let randomNum = Math.random()
+//console.log(randomNum);
+//
+//// if we want to make particular range
+//let x = 5;  
+//randomNum = Math.random() * x;
+//console.log(randomNum);
+//
+//// if we don't need a decimal part of a number
+//randomNum = Math.floor(randomNum)
+//console.log(randomNum);
+//
+//// if we don't need 0 
+//randomNum = Math.floor(randomNum) + 1
+//console.log(randomNum);
+//
+////if we want for range be more specific. For example:
+//const max = 50;
+//const min = 20;
+//
+//let randomNum = Math.random() * (max - min); //make range in between 0 and max variable (and solving the problem with numbers that get out of a range)
+//randomNum = Math.floor(randomNum) + min; //make start point of the range in particular position (in his case it's variable min)
+//
+//console.log(randomNum);
+
+document.getElementById("programName2").textContent = "Random number generator"
+document.getElementById("randBtn").textContent = "generate"
+
+document.getElementById("randBtn").onclick = function(){
+
+  let rndMax = document.getElementById("rndMax").value;
+  rndMax = Number(rndMax);
+  rndMax++;
+  
+  let rndMin = document.getElementById("rndMin").value
+  rndMin = Number(rndMin)
+
+  let rng = Math.floor(Math.random() * (rndMax - rndMin)) + rndMin;
+
+  document.getElementById("randomNumber").textContent = rng
+
+}
