@@ -248,35 +248,35 @@ setContent("counter program", "let's finally make something")
 header(`${elementHeadId}${counter}`, `${elementDescId}${counter}`, `${elementHeader} ${counter}: ${theme}`, `${elementDescription} ${description}`)
 
 
-//// set the buttons names and name of program
-//document.getElementById("programName").textContent = "Counter Program";
-//
-//document.getElementById("btn3").textContent = "plus";
-//document.getElementById("btn2").textContent = "reset";
-//document.getElementById("btn1").textContent = "minus";
-//
-////add counter variable  
-//let counterBase = 0
-//
-//// add functions for each button
-//document.getElementById("counterNumber").textContent = counterBase
-//
-//document.getElementById("btn3").onclick = function(){
-//  counterBase += 1
-//  document.getElementById("counterNumber").textContent = counterBase
-//}
-//
-//document.getElementById("btn2").onclick = function(){
-//  counterBase = 0
-//  document.getElementById("counterNumber").textContent = counterBase
-//}
-//
-//document.getElementById("btn1").onclick = function(){
-//  counterBase -= 1
-//  document.getElementById("counterNumber").textContent = counterBase
-//  
-//}
-//
+// set the buttons names and name of program
+document.getElementById("programName").textContent = "Counter Program";
+
+document.getElementById("btn3").textContent = "plus";
+document.getElementById("btn2").textContent = "reset";
+document.getElementById("btn1").textContent = "minus";
+
+//add counter variable  
+let counterBase = 0
+
+// add functions for each button
+document.getElementById("counterNumber").textContent = counterBase
+
+document.getElementById("btn3").onclick = function(){
+  counterBase += 1
+  document.getElementById("counterNumber").textContent = counterBase
+}
+
+document.getElementById("btn2").onclick = function(){
+  counterBase = 0
+  document.getElementById("counterNumber").textContent = counterBase
+}
+
+document.getElementById("btn1").onclick = function(){
+  counterBase -= 1
+  document.getElementById("counterNumber").textContent = counterBase
+  
+}
+
 
 //------------------ lesson 9 -------------------
 setContent("Math object", "let's learn about some useful instrument as Math obj. With it we can make our work more easy ")

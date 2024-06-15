@@ -96,6 +96,11 @@ body{
             border-radius: 10px;
             margin: 2px 2px;
             cursor: pointer;
+            transition: 0.5;
+        }
+        button:hover{
+            background-color: $btn_text_color;
+            color: $btn_color;
         }
     }
 }

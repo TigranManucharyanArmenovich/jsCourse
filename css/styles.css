@@ -78,6 +78,11 @@ body {
   border-radius: 10px;
   margin: 2px 2px;
   cursor: pointer;
+  transition: 0.5;
+}
+.counterProgram .btns button:hover {
+  background-color: #21fffb;
+  color: #c8882e;
 }
 
 /*# sourceMappingURL=styles.css.map */
